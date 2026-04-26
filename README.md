@@ -2,7 +2,7 @@
 
 A systematic evaluation framework measuring retrieval quality and answer 
 accuracy across a multi-document corpus of Apple and Microsoft 10-K SEC filings.
-Built as a follow-on to [RAG_10K_Assistant](../rag-10k-assistantPublic) — moving from 
+Built as a follow-on to [RAG_10K_Assistant](../rag-10k-assistant) — moving from 
 eyeballing outputs to measuring them.
 
 ## Why This Exists
