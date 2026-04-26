@@ -2,14 +2,14 @@
 
 A systematic evaluation framework measuring retrieval quality and answer 
 accuracy across a multi-document corpus of Apple and Microsoft 10-K SEC filings.
-Built as a follow-on to [RAG_10K_Assistant](../rag-10k-assistant) — moving from 
+Built as a follow-on to [RAG_10K_Assistant](https://github.com/sayemather/rag-10k-assistant), moving from 
 eyeballing outputs to measuring them.
 
 ## Why This Exists
 
 Building a RAG pipeline is straightforward. Knowing whether it actually works 
 is harder. This framework replaces subjective output review with reproducible 
-metrics — the difference between an AI demo and a shippable AI product.
+metrics, the difference between an AI demo and a shippable AI product.
 
 ## What It Measures
 
@@ -56,9 +56,9 @@ split across chunk boundaries.
 
 ## What I'd Improve Next
 
-- **Semantic chunking** — detect topic boundaries instead of splitting by character count
-- **Chunk overlap** — 1-2 sentence overlap at boundaries to avoid splitting key facts across chunks
-- **Metadata filtering** — tag chunks by filing section (Item 7, Item 8) and filter at query time
-- **Larger test set** — 20 questions is enough to show the framework works; 100+ would give statistically reliable scores
-- **Human-labeled ground truth** — synthetic Q&A pairs are a good start but human-reviewed questions would be more rigorous
-- **Cross-year corpus** — add prior year filings to surface temporal retrieval failures
+- **Semantic chunking**: detect topic boundaries instead of splitting by character count
+- **Chunk overlap**: 1-2 sentence overlap at boundaries to avoid splitting key facts across chunks
+- **Metadata filtering**: tag chunks by filing section (Item 7, Item 8) and filter at query time
+- **Larger test set**: 20 questions is enough to show the framework works; 100+ would give statistically reliable scores
+- **Human-labeled ground truth**: synthetic Q&A pairs are a good start but human-reviewed questions would be more rigorous
+- **Cross-year corpus**: add prior year filings to surface temporal retrieval failures
